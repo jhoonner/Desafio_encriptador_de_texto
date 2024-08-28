@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <heder class="heder">
+        <a class="menu_Principal" href="index.html"> <img src="imagen/Logo.png" alt="Imagen de Alura">Inicio</a>
+    </heder>
+    <main class="encriptador">
+        <section class="desarrollo_Encriptador"> 
+            <div class="primer_Bloque">       
+                <textarea id="miParrafoTextarea" placeholder="Ingresa tu texto aqui..."></textarea>
+                <p class="parrafo_Advertencia">  <img src="imagen/signo_de_exclamacion.png" 
+                    alt="Simbolo de Adventencia" width="16px" height="16px"> 
+                    Solo letras minúsculas,sin acentos o caracteres especiales</p> 
+                <div class="container__boton">    
+                    <button  class="procesarEncriptar" onclick="procesarTexto();  guardarTexto(); guardarTextoEncriptado(); mostrarBotonCopiar();" >Encriptar Texto</button>  
+                    <button  class="procesarDesencriptar" onclick="desencriptarTexto(); guardarTexto(); mostrarBotonCopiar();" >Desencriptar Texto</button> 
+                </div>                                 
+            </div> 
+          
+      
+            <div class="resuultadoTranscripcion" id="imagen">
+                <img src="imagen/Muñeco.png">
+                <p1 class="ningunMensaje">Ningún mensaje fue encontrado</p1>
+                <p2 class="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar</p2>
+            </div>  
+            
+            <div class="resultadoDesecriptacion">    
+                <p id="resultado"></p>
+                <button id="botonCopiar" class="copiarTexto"  onclick = "copiarTexto()" >Copiar</button>
+            </div>
+       
+        </section>
+    </main>
+    <footer class="derechos">
+        <p2>Desarrollado por: Jhoonner Ibañez.
+            2024
+        </p2>    
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
